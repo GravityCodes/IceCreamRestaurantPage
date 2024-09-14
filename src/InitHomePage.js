@@ -100,6 +100,7 @@ function InitHomePage () {
     
     const specialSectionbtn = document.createElement("button");
     specialSectionbtn.type = "button";
+    specialSectionbtn.id = "ss-btn";
     specialSectionbtn.classList.add("special-btn");
     specialSectionbtn.textContent = "View Full Menu";
     specialBtnWrapper.appendChild(specialSectionbtn);  
@@ -164,6 +165,7 @@ function InitHomePage () {
     
     const wuButton = document.createElement("button");
     wuButton.type = "button";
+    wuButton.id = "wu-btn";
     wuButton.classList.add("special-btn");
     wuButton.classList.add("why-us-btn");
     wuButton.textContent = "Learn more";

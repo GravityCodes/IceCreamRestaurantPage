@@ -1,3 +1,6 @@
+#menu-main {
+    background: linear-gradient(var(--c-primary) 10%,var(--c-primary-dark) 90%);
+}
 
 #menu {
     height: 100%;

@@ -47,7 +47,8 @@ class ConeMenuItem {
 
 function InitMenuPage () {
     const main = document.createElement("main");
-
+    main.id = "menu-main";
+    
     const menuSection = document.createElement("section");
     menuSection.id = "menu";
 
