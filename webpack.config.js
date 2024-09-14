@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlHandler = require("html-webpack-plugin");
-const { watchFile } = require('fs');
 
 module.exports = {
     mode: "development",

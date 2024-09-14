@@ -1,0 +1,40 @@
+#about-title {
+    color: var(--c-secondary);
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about-p {
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--c-secondary);
+    text-align: center;
+}
+
+#about-p + p {
+    color: var(--c-secondary);
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 30px;
+    text-align: center;
+}
+
+#content {
+    background: linear-gradient(var(--c-primary) 10%,var(--c-primary-dark) 90%);
+}
+
+#about-us-img {
+    height: 500px;
+    width: 900px;
+    margin: 0 auto;
+    border: 10px solid var(--c-secondary);
+    
+}
+
+#about-us-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

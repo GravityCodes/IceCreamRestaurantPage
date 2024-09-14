@@ -1,3 +1,1 @@
-import "./JohanCSSReset.css";
-import "./styles.css";
-import "./menu.css";
+import {InitPage} from "./page-load";

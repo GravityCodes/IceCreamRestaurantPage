@@ -1,27 +1,4 @@
 
-:root {
-    /* Colors */
-    --c-primary: #6fd1f4;
-    --c-primary-dark: #34a7d8;
-    --c-light: #FCFCFC;
-    --c-secondary: #ffef74;
-    --c-secondary-light: #fbf2ac;
-    --c-dark: #042A2B;
-    /**********/
-
-    /* Values */
-
-    --button-radius-value: 30px;
-    --page-padding: 30px;
-}
-
-body {
-    font-family: Helvetica;
-    background: linear-gradient(var(--c-primary) 10%,var(--c-primary-dark) 90%);
-    height: 100vh;
-    font-size: 1rem;
-}
-
 header {
     height: 10%;
     width: 100%;
