@@ -49,7 +49,7 @@ function InitMenuPage () {
     const main = document.createElement("main");
 
     const menuSection = document.createElement("section");
-    menuSection.id = "cone-menu";
+    menuSection.id = "menu";
 
     const menuTitle = document.createElement("h2");
     menuTitle.textContent = "Menu";
@@ -57,10 +57,19 @@ function InitMenuPage () {
     const coneMenu = document.createElement("div");
     coneMenu.id = "cone-menu";
 
+    const purpleDragonIc = new ConeMenuItem(itemImg1,"purple dragon ice cream", "Purple Dragon","$4.99");
+    const sakuraIc = new ConeMenuItem(itemImg2, "Vatella ice cream", "Sakura", "$2.99");
+    const vatellaIc = new ConeMenuItem(itemImg3, "Vatella ice cream", "Vatella", "$4.99");
+    const matchaIc = new ConeMenuItem(itemImg4, "matcha ice cream", "Matcha", "$3.99");
+    const chocolateIc = new ConeMenuItem(itemImg5, "chocolate ice cream", "Chocolate", "$2.99");
+    const vanillaIc = new ConeMenuItem(itemImg6,"Vanilla ice cream", "Vanilla", "$4.99");
 
+    let menuItems = [purpleDragonIc.init(), sakuraIc.init(), vatellaIc.init(), matchaIc.init(), chocolateIc.init(), vanillaIc.init()];
 
+    menuItems.forEach(item => coneMenu.appendChild(item));
 
     menuSection.appendChild(menuTitle)
+    menuSection.appendChild(coneMenu);
     main.appendChild(menuSection);
 
     return main;
