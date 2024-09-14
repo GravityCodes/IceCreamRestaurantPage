@@ -42,7 +42,7 @@ $htmlContainer.appendChild(footer);
                 currentButton.classList.remove("active-btn");
                 homePage.forEach(child => $htmlContainer.appendChild(child));
                 currentScreen = childsToList(homePage); 
-                currentButton = e.target;
+                currentButton = $nav.children[0];
                 currentButton.classList.add("active-btn");
                 $htmlContainer.appendChild(footer);
                 break;
@@ -53,7 +53,7 @@ $htmlContainer.appendChild(footer);
                 currentButton.classList.remove("active-btn");
                 $htmlContainer.appendChild(menuPage);
                 currentScreen = childsToList(menuPage);
-                currentButton = e.target;
+                currentButton = $nav.children[1];
                 currentButton.classList.add("active-btn");
                 $htmlContainer.appendChild(footer);
                 break;
@@ -64,7 +64,7 @@ $htmlContainer.appendChild(footer);
                 currentButton.classList.remove("active-btn");
                 $htmlContainer.appendChild(aboutPage);
                 currentScreen = childsToList(aboutPage);
-                currentButton = e.target;
+                currentButton = $nav.children[2];
                 currentButton.classList.add("active-btn");
                 $htmlContainer.appendChild(footer);
                 break;   
@@ -78,6 +78,9 @@ $htmlContainer.appendChild(footer);
 
     function viewFullMenu(){
         window.scrollTo(0,0); 
+        currentButton.classList.remove("active-btn");
+        currentButton = $nav.children[1];
+        currentButton.classList.add("active-btn");
         currentScreen.forEach(child => $htmlContainer.removeChild(child));
         $htmlContainer.removeChild(footer);
 
@@ -89,6 +92,9 @@ $htmlContainer.appendChild(footer);
 
     function viewAboutUs (){
         window.scrollTo(0,0); 
+        currentButton.classList.remove("active-btn");
+        currentButton = $nav.children[2];
+        currentButton.classList.add("active-btn");
         currentScreen.forEach(child => $htmlContainer.removeChild(child));
         $htmlContainer.removeChild(footer); 
         $htmlContainer.appendChild(aboutPage);
